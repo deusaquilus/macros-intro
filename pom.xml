@@ -7,18 +7,34 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-compiler</artifactId>
+            <version>2.12.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.12.12</version>
+        </dependency>
+
+        <dependency>
             <groupId>io.getquill</groupId>
-            <artifactId>quill-core_2.11</artifactId>
+            <artifactId>quill-core_2.12</artifactId>
             <version>${quill.version}</version>
         </dependency>
         <dependency>
             <groupId>io.getquill</groupId>
-            <artifactId>quill-sql_2.11</artifactId>
+            <artifactId>quill-sql_2.12</artifactId>
             <version>${quill.version}</version>
         </dependency>
         <dependency>
             <groupId>io.getquill</groupId>
-            <artifactId>quill-jdbc_2.11</artifactId>
+            <artifactId>quill-jdbc_2.12</artifactId>
             <version>${quill.version}</version>
         </dependency>
         <dependency>
@@ -30,17 +46,17 @@
         <!-- Spark Stuff -->
         <dependency>
             <groupId>io.getquill</groupId>
-            <artifactId>quill-spark_2.11</artifactId>
+            <artifactId>quill-spark_2.12</artifactId>
             <version>${quill.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.11</artifactId>
+            <artifactId>spark-core_2.12</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-hive_2.11</artifactId>
+            <artifactId>spark-hive_2.12</artifactId>
             <version>${spark.version}</version>
         </dependency>
     </dependencies>
@@ -104,8 +120,8 @@
     </build>
 
     <properties>
-        <scala.version>2.11.11</scala.version>
-        <quill.version>2.5.4</quill.version>
+        <scala.version>2.12.12</scala.version>
+        <quill.version>3.5.3</quill.version>
         <spark.version>2.2.0</spark.version>
     </properties>
 
